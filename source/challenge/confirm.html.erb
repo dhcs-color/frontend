@@ -1,0 +1,24 @@
+---
+title: [confirm that friend for the challenge]
+---
+
+<div class="matchup">
+  <div class="friend">
+    <%= image_tag 'friend.gif' %>
+  </div>
+  <div class="you">
+    <%= image_tag 'you.gif' %>
+  </div>
+</div>
+
+<% link_to 'photo' do %>
+  <button>
+    <h3>Start a game <span>with <em>Friend's Name</em>?</span></h3>
+  </button>
+<% end %>
+
+<% link_to 'new' do %>
+  <button>
+    Choose someone else
+  </button>
+<% end %>

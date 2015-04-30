@@ -1,0 +1,37 @@
+---
+title: [choose the colors]
+todo: add tooltips, add color picker
+---
+
+<nav>
+  <ul>
+    <li class="ss-icon previous">
+      <%= link_to "previous", "photo" %>
+    </li>
+    <li class="ss-icon next">
+      <!-- if it's not ready to score, link to a 'send' page -->
+      <%= link_to "next", "score" %>
+    </ul>
+</nav>
+
+<div class="image">
+  <canvas id="photo">
+  </canvas>
+</div>
+
+<div class="palette">
+  <ul>
+    <li>
+      <canvas id="color-1"></canvas>
+    </li>
+    <li>
+      <canvas id="color-2"></canvas>
+    </li>
+    <li>
+      <canvas id="color-3"></canvas>
+    </li>
+    <li>
+      <canvas id="color-4"></canvas>
+    </li>
+  </ul>
+</div>
