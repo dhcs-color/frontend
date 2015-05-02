@@ -2,14 +2,15 @@
 title: [take a photo TODO: phone permissions]
 ---
 
-<nav>
+<nav class="arrows">
   <ul>
     <li class="ss-icon previous">
       <%= link_to "previous", "confirm" %>
     </li>
-    <li class="ss-icon next">
-      <%= link_to "next", "confirm" %>
-    </ul>
+    <!-- <li class="ss-icon next">
+      <%= link_to "navigateright", "confirm" %>
+    </li> -->
+  </ul>
 </nav>
 
 <div class="tutorial">
@@ -21,3 +22,8 @@ title: [take a photo TODO: phone permissions]
   <!-- on click ask for camera permission -->
   <i class="ss-icon">camera</i>
 </div>
+
+<form action="palette" method="post" enctype="multipart/form-data">
+  <input class="upload button secondary" type="file" accept="image/*" capture>
+  <input class="button" type="submit" value="Use this!">
+</form>

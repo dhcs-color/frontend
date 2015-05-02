@@ -55,6 +55,10 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
+foundation_path = Gem::Specification.find_by_name('zurb-foundation').gem_dir
+set :js_assets_paths, [File.join(foundation_path, 'js')]
+set :sass_assets_paths, [File.join(foundation_path, 'scss')]
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

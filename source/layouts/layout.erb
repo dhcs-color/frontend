@@ -8,10 +8,11 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>
-      <%= ("rothko app &mdash; " + current_page.data.title) || ("rothko app &mdash; see the color in your world") %>
+      rothko app &mdash; see the color in your world
     </title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "normalize", "all", (data.page.style ? data.page.style : {}) %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
   </head>
   
