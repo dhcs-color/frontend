@@ -1,0 +1,68 @@
+$dots: 8;
+$dot-width: 24px;
+$dot-height: $dot-width;
+$angle: 360 / $dots;
+$rotate: 0;
+
+body.challenge_calculating {
+  width: 100%;
+  height: 100%;
+  margin: 30% 0 0 0;
+  padding: 0;
+}
+
+.graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  @include animation(rotate 4s linear 0s infinite);
+  @include filter(url("#crop"));
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($dot-height / 2);
+  margin-left: -($dot-width / 2);
+  @for $i from 1 through $dots {
+    $color: hsl($i * 360 / $dots, 80%, 70%);
+    $rotate: $rotate + $angle;
+    &:nth-child(#{$i}) {
+      @include transform(translate($dot-height / 2) rotate(#{$rotate + 90}deg));
+      span {
+        background: $color;
+      }
+    }
+  }
+  span {
+    position: absolute;
+    width: $dot-width;
+    height: $dot-height;
+    border-radius: 50%;
+    @include animation(0.75s pop 0s ease-out infinite);
+  }
+}
+
+
+@include keyframes(rotate) {
+  0% {
+    @include transform(translate(-50%, -50%) rotate(0));
+  }
+  100% {
+    @include transform(translate(-50%, -50%) rotate(360deg));
+  }
+}
+
+@include keyframes(pop) {
+  0% {
+    @include transform(translateX(0));
+  }
+  50% {
+    @include transform(translateX(50px));
+  }
+  75% {
+    @include transform(translateX(75px));
+  }
+}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import "compass";
+@import "foundation";
+
+a.button, input.button {
+  @include border-radius(50px);
+}
+
+
+@import "type/ss-standard";
+@import "type/ss-social-regular";
+
+// @import "farbtastic";
+@import "signin";
+@import "challenge/calculating";
+
+nav.arrows {
+    ul {
+      list-style-type: none;
+      font-size: 30px;
+    }
+    ul, li {
+      margin: 0;
+    }
+    ul {
+      padding: 30px 40px 0;
+    }
+    .previous, .next {
+      @include single-box-shadow(0, 3px, 5px, 2px, 
+        rgba(0, 0, 0, 0.1));
+      background-color: rgba(255, 255, 255, 0.7);
+      border: rgba(0, 0, 0, 0.2);
+      @include border-radius(50px);
+    }
+    .previous:hover, .next:hover {
+
+    }
+    .previous {
+      padding: 10px 20px 7px 17px;
+      float: left;
+    }
+    .next {
+      padding: 10px 17px 7px 20px;
+      float: right;
+    }
+    .ss-icon {
+      font-family: "SSStandard";
+    }
+  }
+
+  // ====================
+
+body.index {
+  hr {
+    @include border-radius(4px);
+    background-color: #eee;
+    border: none;
+    border-top: 1px solid lighten(#eee, 5%);
+    border-bottom: 2px solid darken(#eee, 5%);
+    height: 5px;
+    width: 60%;
+  }
+  #container {
+    background-color: #eee;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #user-information {
+    @include border-radius(5px);
+    background-color: #fff;
+    height: 100px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 80%;
+    .profile {
+      float: left;
+      padding-left: 110px;
+      h3 { line-height: 60px; }
+    }
+  }
+  .facebook-profile-picture {
+    @include border-radius(50px);
+    background-color: #eee;
+    float: left;
+    height: 100px;
+    width: 100px;
+  }
+  #new-challenge {
+    @include button($radius:50px);
+    display: inline-block;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+
+body.challenge_new {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  .friends-list {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    li {
+      float: left;
+      overflow: hidden;
+      position: relative;
+      width: -webkit-calc(100% / 3);
+      width: calc(100% / 3);
+      a, a img {
+        display: block;
+        width: 100%;
+      }
+      a img {
+        max-width: 100%;
+      }
+      figure:before {
+        @include transition(all 0.3s);
+        background: rgba(0,0,0, 0.1);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+      }
+      figure:hover:before {
+        background: none;
+      }
+      figure:click:before {
+        background: none;
+      }
+    }
+  }
+  hr {
+    background-color: red;
+    border: 0;
+    height: 200px;
+    margin: 0;
+    width: 100%;
+  }
+  .prompt {
+    @include single-box-shadow(0, 3px, 10px, 2px, 
+      rgba(0, 0, 0, 0.5));
+    background-color: #fff;
+    bottom: 0;
+    font-size: 0;
+    height: 200px;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    .you {
+      float: left;
+      height: 100%;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+    img {
+      height: 100%;
+    }
+    .instructions:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .instructions {
+      padding-top: 25px;
+      display: inline-block;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+body.challenge_photo {
+  .ss-icon, .ss-camera {
+    font-family: "SSStandard";
+  }
+  .tutorial {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .camera-icon {
+    margin-top: 100px;
+    font-size: 120px;
+    text-align: center;
+  }
+  form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    input {
+      text-align: center;
+    }
+    input:first-child {
+      display: inline-block;
+    }
+  }
+
+}
+
+/* animation for body.signin */
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}

@@ -1,0 +1,15 @@
+/* line 1, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge-confirm.css.scss */
+body.challenge_confirm {
+  margin-top: 100px; }
+
+/* line 5, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge-confirm.css.scss */
+.matchup {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 13, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge-confirm.css.scss */
+.button {
+  display: block;
+  margin: 2em auto;
+  padding: 20px;
+  width: 50%; }
