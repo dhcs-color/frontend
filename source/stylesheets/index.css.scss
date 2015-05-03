@@ -1,3 +1,6 @@
+@import "compass";
+@import "foundation";
+
 body.index {
   hr {
     @include border-radius(4px);
