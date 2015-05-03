@@ -5,7 +5,7 @@ title: [new challenge]
 <ul class="friends-list">
   <% for i in 0..13 %>
     <li>
-      <% link_to '../confirm' do %>
+      <% link_to '/challenge/confirm' do %>
         <figure>
           <%= image_tag 'friend.gif' %>
         </figure>
@@ -18,7 +18,7 @@ title: [new challenge]
 
 <div class="prompt">
   <div class="you">
-    <%= image_tag 'you.gif' %>
+    <%= image_tag 'you.png' %>
   </div>
   <div class="instructions">
     Choose a friend to play with
