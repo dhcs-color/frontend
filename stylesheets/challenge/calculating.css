@@ -1,0 +1,172 @@
+/* line 9, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+body.challenge_calculating {
+  width: 100%;
+  height: 100%;
+  margin: 30% 0 0 0;
+  padding: 0; }
+
+/* line 16, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+.graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-animation: rotate 4s linear 0s infinite;
+  -webkit-animation: rotate 4s linear 0s infinite;
+  animation: rotate 4s linear 0s infinite;
+  -webkit-filter: url("#crop");
+  filter: url("#crop"); }
+
+/* line 25, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(1) {
+    -moz-transform: translate(12px) rotate(135deg);
+    -ms-transform: translate(12px) rotate(135deg);
+    -webkit-transform: translate(12px) rotate(135deg);
+    transform: translate(12px) rotate(135deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(1) span {
+      background: #f0d175; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(2) {
+    -moz-transform: translate(12px) rotate(180deg);
+    -ms-transform: translate(12px) rotate(180deg);
+    -webkit-transform: translate(12px) rotate(180deg);
+    transform: translate(12px) rotate(180deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(2) span {
+      background: #b3f075; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(3) {
+    -moz-transform: translate(12px) rotate(225deg);
+    -ms-transform: translate(12px) rotate(225deg);
+    -webkit-transform: translate(12px) rotate(225deg);
+    transform: translate(12px) rotate(225deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(3) span {
+      background: #75f094; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(4) {
+    -moz-transform: translate(12px) rotate(270deg);
+    -ms-transform: translate(12px) rotate(270deg);
+    -webkit-transform: translate(12px) rotate(270deg);
+    transform: translate(12px) rotate(270deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(4) span {
+      background: #75f0f0; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(5) {
+    -moz-transform: translate(12px) rotate(315deg);
+    -ms-transform: translate(12px) rotate(315deg);
+    -webkit-transform: translate(12px) rotate(315deg);
+    transform: translate(12px) rotate(315deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(5) span {
+      background: #7594f0; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(6) {
+    -moz-transform: translate(12px) rotate(360deg);
+    -ms-transform: translate(12px) rotate(360deg);
+    -webkit-transform: translate(12px) rotate(360deg);
+    transform: translate(12px) rotate(360deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(6) span {
+      background: #b275f0; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(7) {
+    -moz-transform: translate(12px) rotate(405deg);
+    -ms-transform: translate(12px) rotate(405deg);
+    -webkit-transform: translate(12px) rotate(405deg);
+    transform: translate(12px) rotate(405deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(7) span {
+      background: #f075d1; }
+  /* line 34, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot:nth-child(8) {
+    -moz-transform: translate(12px) rotate(450deg);
+    -ms-transform: translate(12px) rotate(450deg);
+    -webkit-transform: translate(12px) rotate(450deg);
+    transform: translate(12px) rotate(450deg); }
+    /* line 36, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+    .dot:nth-child(8) span {
+      background: #f07575; }
+  /* line 41, /Users/Celine/Index/Web/dhcs/source/stylesheets/challenge/calculating.css.scss */
+  .dot span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -moz-animation: 0.75s pop 0s ease-out infinite;
+    -webkit-animation: 0.75s pop 0s ease-out infinite;
+    animation: 0.75s pop 0s ease-out infinite; }
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0); }
+  100% {
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); } }
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes rotate {
+  0% {
+    -moz-transform: translate(-50%, -50%) rotate(0);
+    -ms-transform: translate(-50%, -50%) rotate(0);
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0); }
+  100% {
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); } }
+@-moz-keyframes pop {
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -moz-transform: translateX(50px);
+    transform: translateX(50px); }
+  75% {
+    -moz-transform: translateX(75px);
+    transform: translateX(75px); } }
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px); }
+  75% {
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px); } }
+@keyframes pop {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px); }
+  75% {
+    -moz-transform: translateX(75px);
+    -ms-transform: translateX(75px);
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px); } }

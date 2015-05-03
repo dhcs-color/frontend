@@ -5,6 +5,8 @@
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>
@@ -17,32 +19,13 @@
   </head>
   
   <body class="color-picker-demo color-picker-demo_index">
-    <html>
-  <head>
-    <style>
-      body {
-        font-family: Verdana, Arial, sans-serif;
-      }
-    </style>
-    <meta name = "viewport" content = "width = device-width">
-    <link rel="stylesheet" href="farbtastic/farbtastic.css" type="text/css" media="all" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="farbtastic/farbtastic.js"></script>
-    <script src="jquery.ui.ipad.js"></script>
     <script>
-      $(document).ready(function() {
-        $('#colorpicker').farbtastic('#color');
-        $('#colorpicker').addTouch();
-      });   
-    </script>
-  </head>
-  <body>
-    <h1>Beautiful color selector for iPad, iPhone and iPod Touch</h1>
-    <p>This demo belongs to <a href="http://typeof.it" title="TypeOf.it another JavaScript site">typeof.it</a>, please refer to the site for an explanation about this demo.</p>
-    <p>This demo uses <a href="http://acko.net/dev/farbtastic">Farbtastic</a> and <a href="http://code.google.com/p/jquery-ui-for-ipad-and-iphone/">jQueryUI touch support</a> (with minor modifications) to render a color picker with touch-events support.</p>
-    <form><input type="text" id="color" name="color" value="#000000" /></form>
-    <div id="colorpicker"></div>  
-  </body>
-</html>
+  $(document).ready(function() {
+    $('#colorpicker').farbtastic('#color');
+    $('#colorpicker').addTouch();
+  });   
+</script>
+<form><input type="text" id="color" name="color" value="#000000" /></form>
+<div id="colorpicker"></div>
   </body>
 </html>
