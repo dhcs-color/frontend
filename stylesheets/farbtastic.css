@@ -40,13 +40,13 @@
 
 /* line 37, /Users/Celine/Index/Web/dhcs/source/stylesheets/farbtastic.css.scss */
 .farbtastic .wheel {
-  background: url("/images/farb-wheel.png") no-repeat;
+  background: url("../images/farb-wheel.png") no-repeat;
   width: 195px;
   height: 195px; }
 
 /* line 42, /Users/Celine/Index/Web/dhcs/source/stylesheets/farbtastic.css.scss */
 .farbtastic .overlay {
-  background: url("/images/farb-mask.png") no-repeat; }
+  background: url("../images/farb-mask.png") no-repeat; }
 
 /* line 45, /Users/Celine/Index/Web/dhcs/source/stylesheets/farbtastic.css.scss */
 .farbtastic .marker {
@@ -54,4 +54,4 @@
   height: 17px;
   margin: -8px 0 0 -8px;
   overflow: hidden;
-  background: url("/images/farb-marker.png") no-repeat; }
+  background: url("../images/farb-marker.png") no-repeat; }
